@@ -41,7 +41,7 @@ function createTask(taskName) {
 //tasks functions
 document.addEventListener("click", function(e){
     if(e.target.classList.contains('task-del')){
-      localStorage.removeItem(e.target.parentNode.querySelector(".task-title").innerText)
+      localStorage.removeItem(e.target.parentNode.querySelector(".task-title").innerText);
        e.target.parentNode.remove();
        checkTasks();
     }
