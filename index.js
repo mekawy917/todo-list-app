@@ -48,6 +48,7 @@ document.addEventListener("click", function(e){
     if(e.target.classList.contains('task-done')){
         e.target.parentNode.classList.toggle('done');
         checkTasks();
+         localStorage.removeItem(e.target.parentNode.querySelector(".task-title").innerText);
     };
 } );
 //check tasks 
